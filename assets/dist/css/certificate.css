@@ -38,10 +38,7 @@ main{
 
 /* >>>>>>>>  main <<<<<<<<<<<<< */
 /* *********** section 1*/
-main>section:first-child{
-    margin-inline: 20%;
-    font-size: larger;
-}
+
 .imgs>div:nth-child(odd){
     display: flex;
     flex-direction: row;
@@ -149,3 +146,18 @@ main>section:last-child>div:first-child{
 }
 /* *********** section 2*/
 /* >>>>>>>>  main <<<<<<<<<<<<< */
+
+@media (360px <= width <= 740px) {
+    header>div {
+        display: flex;
+        flex-direction: column;
+    }
+    main>section:first-child{
+        margin-inline: 5%;
+        font-size: larger;
+    } 
+    .imgs{
+        position: relative;
+        left: -29%;
+        }
+    }
